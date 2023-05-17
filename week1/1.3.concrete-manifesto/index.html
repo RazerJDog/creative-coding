@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href='style.css' rel='stylesheet'>
     <meta charset="utf-8">
     <title>Concrete Manifesto</title> 
     <!--
@@ -15,7 +16,39 @@
 <body>
 
     <h1>This is a Heading</h1>
-    <p>This is a paragraph.</p>
+    <p id="grow" style="align-content: center;">&nbsp&nbsp&nbsp&nbsp DDDDDDDDDD&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspn<br>
+      &nbsp&nbsp&nbsp&nbsp D&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspD&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspg<br>
+      &nbsp&nbsp&nbsp&nbsp D&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspD&nbsp&nbsp&nbspi<br>
+      B&nbsp D&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspD&nbsp&nbsps<br>
+      &nbsp&nbsp&nbspaD&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspDe<br>
+    BaD&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspDesign<br>
+      &nbsp&nbsp&nbspaD&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspDe<br>
+      B&nbsp D&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspD&nbsp&nbsps<br>
+      &nbsp&nbsp&nbsp&nbsp D&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspD&nbsp&nbsp&nbsp&nbspi<br>
+      &nbsp&nbsp&nbsp&nbsp D&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspD&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspg<br>
+     &nbsp&nbsp&nbsp&nbsp DDDDDDDDDD&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspn</p>
 
+<script type="text/javascript">
+let g = document.getElementById("grow");
+
+// set the font-size property in JavaScript
+g.style.fontSize = "100%";
+
+// add a function to the onclick event
+g.onclick = function(){
+
+     // determine current font size and convert it to an integer
+     let fs = Number(this.style.fontSize.replace("%",""));
+
+     // make sure it worked
+     console.log(fs);
+
+     // change the color of the clicked element 
+     this.style.color = "red";
+
+     // change the font size to increase it by 10%
+     this.style.fontSize = fs * 1.1 + "%";
+};
+</script>
 </body>
 </html> 
