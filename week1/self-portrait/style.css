@@ -1,0 +1,56 @@
+#text {
+  background-color: dimgray;
+  color: white;
+  width: 670px;
+}
+.pie {
+  width: 400px;
+  height: 400px;
+  background-image: conic-gradient(blue 0% 45%, red 45% 65%, lightgreen 65% 75%, yellow 75% 93%, purple 93% 100%);
+  border-radius: 50%
+}
+#my-pie-chart-container {
+  display: flex;
+  align-items: center;
+}
+
+#legenda {
+  margin-left: 20px;
+  background-color: dimgray;
+  padding: 5px;
+  color: white;
+}
+
+.entry {
+  display: flex;
+  align-items: center;
+}
+
+.entry-color {
+    height: 10px;
+    width: 10px;
+}
+
+.entry-text {
+  margin-left: 5px;
+}
+
+#color-red {
+  background-color: red;
+}
+
+#color-blue {
+  background-color: blue;
+}
+
+#color-yellow {
+  background-color: yellow;
+}
+
+#color-lightgreen {
+  background-color: lightgreen;
+}
+
+#color-purple {
+  background-color: purple;
+}
