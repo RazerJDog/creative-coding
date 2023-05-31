@@ -18,5 +18,5 @@ function draw() {
 
   let d = sqrt((x - mouseX)**2 + (y - mouseY)**2);
 
-
+  image(sprite, x - 125, y - 125, 250, 250);
 }
