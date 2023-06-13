@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- I decided to go with the one click game kind of idea that was given as a recemondation. Thought that it was challenging enough but not too simple either. As a gamer it's obvious why I picked it. I love playing video games, and as a kid I would go on cool math games and miniclip and play all of these different flash games. Now a days I'm a bit pickier with what I play as not everything amuses me anymore. But I took one of my favorite puzzle types, mazes and mixed it with a fog of war type mechanic from other strategy games like league of legends to produce a maze that you can't see entirely. I hope it's original, as I think it's a really cool concept. The program utilizes some aspects that we learned about over the semester, like classes and animation. The bread crumbs are the class, and the spy glass is the animation as it follows your cursor. 
+
+        Over the course of working on this project I ran into a few issues. The first was thinking on how to even code the spy glass. my initial intention was to draw a rectangle over the image and then draw a circle on top of everything that could see through the rectangle. but I did more thinking and realized that wasn't gonna work. So i spent a good long while thinking about how to do it, and then I started experimenting with just a circle. and I found out that the stroke Weight doesn't go outwards, it instead goes inwards. so then I just made a massive circle, and made the stroke weight be thick enough to cover the entire image but leave som room for the user to see through. 
+
+        Another problem I faced was drawing a line on the image. As you go through a maze, you draw a line through it, and that's what I wanted to do on the mouse press. I wanted it to change the pixel color on the image so that way it would look like a real life curvy line through the maze. well the image wasn't cooperating properly, it wouldn't change the pixel on the cursor, it would do it randomly. and I even tested my old code from the pixels project to see if that would work and that one didn't. So i decided to just switch to bread crumbs like you would do if you were in a real life maze. 
+
+        Overall i'm happy how it turned out. Everything works the way I want it to.-->
     <meta charset="utf-8">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js"></script> -->
